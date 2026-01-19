@@ -1,6 +1,6 @@
 <?php
 /**
- * 静态版 Waline 评论模板 (中文直击版)
+ * 静态版 Waline 评论模板 (中文版)
  * 采用原生 JSON 注入语言包，保证中文提示 100% 生效。
  */
 
@@ -80,7 +80,8 @@ if ( post_password_required() ) {
 
         Waline.init({
             el: '#waline',
-            serverURL: 'https://your-waline-server.vercel.app',
+            // 部署教程：https://waline.js.org/
+            serverURL: 'https://your-waline-server.vercel.app', // 重要：请将 URL 替换为你自己的 Waline 服务器地址
             dark: 'html.dark',
             path: window.location.pathname,
             locale: nativeZhCNLocale,
